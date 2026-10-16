@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://martinolszanecki-dot.github.io/ai3dtracker/sitemap.xml
