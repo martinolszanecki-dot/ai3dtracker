@@ -60,7 +60,8 @@
     "sources": [
       "https://www.meshy.ai/pricing"
     ],
-    "complete": true
+    "complete": true,
+    "affiliateUrl": "https://www.meshy.ai/?utm_medium=affiliate&utm_source=promotekit&via=martinOL"
   },
   {
     "slug": "tripo",
@@ -115,7 +116,8 @@
       "https://www.tripo3d.ai/help/getting-started/what-3d-file-formats-do-you-support",
       "https://www.tripo3d.ai/help/features/how-to-prepare-models-for-3d-printing"
     ],
-    "complete": true
+    "complete": true,
+    "affiliateUrl": null
   },
   {
     "slug": "rodin",
@@ -168,7 +170,8 @@
       "https://freedom251.com/apps/hyper3d-rodin/",
       "https://knois.com/services/hyper3d-rodin"
     ],
-    "complete": false
+    "complete": false,
+    "affiliateUrl": null
   },
   {
     "slug": "hunyuan3d",
@@ -228,7 +231,8 @@
       "https://intl.cloud.tencent.com/document/product/1284/75976",
       "https://huggingface.co/tencent/Hunyuan3D-2.1/raw/main/LICENSE"
     ],
-    "complete": true
+    "complete": true,
+    "affiliateUrl": null
   },
   {
     "slug": "hitem3d",
@@ -276,7 +280,8 @@
       "https://assethub.io/blog/hitem3d-pricing",
       "https://trify3d.com/blog/hi3d-ai-3d-generator-review"
     ],
-    "complete": false
+    "complete": false,
+    "affiliateUrl": null
   },
   {
     "slug": "csm",
@@ -330,7 +335,8 @@
       "https://docs.csm.ai/credits"
     ],
     "complete": false,
-    "status": "discontinued"
+    "status": "discontinued",
+    "affiliateUrl": null
   },
   {
     "slug": "luma-genie",
@@ -357,7 +363,8 @@
       "https://lumalabs.ai/pricing"
     ],
     "complete": false,
-    "status": "legacy"
+    "status": "legacy",
+    "affiliateUrl": null
   },
   {
     "slug": "sloyd",
@@ -402,7 +409,8 @@
     "sources": [
       "https://www.sloyd.ai/pricing"
     ],
-    "complete": true
+    "complete": true,
+    "affiliateUrl": null
   },
   {
     "slug": "alpha3d",
@@ -454,7 +462,8 @@
       "https://www.alpha3d.io/pricing",
       "https://www.alpha3d.io/faq"
     ],
-    "complete": true
+    "complete": true,
+    "affiliateUrl": null
   },
   {
     "slug": "3dfy",
@@ -491,7 +500,8 @@
       "https://3dfy.ai",
       "https://www.gameassetdeals.com/asset/257918/3dfy-prompt-ai-powered-text-to-3d-model-generator"
     ],
-    "complete": false
+    "complete": false,
+    "affiliateUrl": null
   },
   {
     "slug": "kaedim",
@@ -538,7 +548,8 @@
       "https://www.kaedim3d.com/plans",
       "https://info.kaedim3d.com/resources/faq"
     ],
-    "complete": false
+    "complete": false,
+    "affiliateUrl": null
   },
   {
     "slug": "spline-ai",
@@ -595,7 +606,8 @@
     "sources": [
       "https://spline.design/pricing"
     ],
-    "complete": false
+    "complete": false,
+    "affiliateUrl": null
   },
   {
     "slug": "varco-3d",
@@ -638,7 +650,8 @@
       "https://nc-ai.com/ko/newsroom/press/nc-ai-ai-3d-varco-3d",
       "https://www.capterra.com/p/10049298/Varco-3D/pricing/"
     ],
-    "complete": false
+    "complete": false,
+    "affiliateUrl": null
   },
   {
     "slug": "yvo3d",
@@ -697,7 +710,8 @@
       "https://api.yvo3d.com/docs/pricing",
       "https://api.yvo3d.com/docs/generation"
     ],
-    "complete": true
+    "complete": true,
+    "affiliateUrl": null
   },
   {
     "slug": "masterpiece-x",
@@ -743,6 +757,7 @@
     "sources": [
       "https://www.masterpiecex.com/pricing"
     ],
-    "complete": false
+    "complete": false,
+    "affiliateUrl": null
   }
 ]
