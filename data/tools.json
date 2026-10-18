@@ -4,7 +4,7 @@
     "name": "Meshy",
     "url": "https://www.meshy.ai",
     "affiliate": "meshy",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-18",
     "inputs": "Text, image, multi-view image",
     "plans": [
       {
@@ -58,10 +58,14 @@
     "modelVersion": "Meshy 6 (\"Meshy 6 Lite\" referenced on pricing page)",
     "notes": "DCC bridge: Roblox, Blender, Godot, Unity, Unreal, Maya, 3ds Max. API available. 50% off first month for new users.",
     "sources": [
-      "https://www.meshy.ai/pricing"
+      "https://www.meshy.ai/pricing",
+      "https://help.meshy.ai/en/articles/10000507-how-many-credits-does-each-generation-task-cost",
+      "https://help.meshy.ai/en/articles/16102098-can-i-use-meshy-assets-commercially"
     ],
     "complete": true,
-    "affiliateUrl": "https://www.meshy.ai/?utm_medium=affiliate&utm_source=promotekit&via=martinOL"
+    "affiliateUrl": "https://www.meshy.ai/?utm_medium=affiliate&utm_source=promotekit&via=martinOL",
+    "creditCosts": "Meshy 6: 20 credits untextured; 30 with 2K/4K texture; 35 with 8K texture (text- or image-to-3D). Retexture 10–15.",
+    "freeCommercial": "Yes – CC BY 4.0 (credit Meshy)"
   },
   {
     "slug": "tripo",
@@ -102,7 +106,7 @@
       "STL",
       "3MF"
     ],
-    "license": "Free: public models, non-commercial. Paid: private models, commercial use.",
+    "license": "Free: Tripo retains rights, non-commercial (ToS 5.2.1). Paid: full commercial rights; outputs not used for training (ToS 5.2.2).",
     "features": {
       "texturing": "Yes – up to 4K (8K on Max)",
       "rigging": "unknown",
@@ -114,33 +118,35 @@
     "sources": [
       "https://www.tripo3d.ai/pricing",
       "https://www.tripo3d.ai/help/getting-started/what-3d-file-formats-do-you-support",
-      "https://www.tripo3d.ai/help/features/how-to-prepare-models-for-3d-printing"
+      "https://www.tripo3d.ai/help/features/how-to-prepare-models-for-3d-printing",
+      "https://www.tripo3d.ai/help/privacy-policy/how-to-use-tripo-models-commercially"
     ],
     "complete": true,
-    "affiliateUrl": null
+    "affiliateUrl": null,
+    "freeCommercial": "No – non-commercial"
   },
   {
     "slug": "rodin",
     "name": "Rodin (Hyper3D)",
     "url": "https://hyper3d.ai",
     "affiliate": "rodin",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-18",
     "inputs": "Text, image, multi-image",
     "plans": [
       {
         "name": "Free",
         "price": "$0",
-        "credits": "Pay by result; 10 private assets"
+        "credits": "Pay by result; 10 private assets; export from legacy models only"
       },
       {
         "name": "Creator",
-        "price": "$30/mo; $24/mo billed annually ($288/yr) [third-party source – not confirmed on official page]",
-        "credits": "30 credits/month [third-party source – not confirmed on official page]"
+        "price": "$30/mo; $24/mo billed yearly ($288)",
+        "credits": "About 60 models/month (official estimate)"
       },
       {
         "name": "Business",
-        "price": "$120/mo; $96/mo billed annually ($1,152/yr) [third-party source – not confirmed on official page]",
-        "credits": "208 credits/month [third-party source – not confirmed on official page]"
+        "price": "$120/mo; $96/mo billed yearly ($1,152)",
+        "credits": "About 416 models/month (official estimate); full API"
       },
       {
         "name": "Enterprise",
@@ -149,29 +155,36 @@
       },
       {
         "name": "Direct credits",
-        "price": "$1.5/credit (official)",
+        "price": "$1.5/credit",
         "credits": "—"
       }
     ],
-    "costPerModel": "n/a",
+    "costPerModel": "≈$0.50 (Creator: $30 / ~60 models), ≈$0.29 (Business: $120 / ~416 models) – derived from Hyper3D's own estimates",
     "freeTier": "Yes – generate free, pay on confirmation; export from legacy models only",
-    "exportFormats": [],
+    "exportFormats": [
+      "GLB",
+      "FBX",
+      "OBJ",
+      "USDZ",
+      "STL"
+    ],
     "license": "Paid plans: unlimited export and any use. Free: limited; review terms.",
     "features": {
       "texturing": "Yes – HD/custom texture, baked normals (Creator+)",
       "rigging": "unknown",
       "retopology": "Smart Low-Poly; High-Poly Quads (Business)"
     },
-    "printability": "unknown",
-    "modelVersion": "unknown (Rodin)",
-    "notes": "Pay-by-result workflow; ChatAvatar and OmniCraft tools. Creator/Business prices come from third-party listings; official page did not expose them to our fetch.",
+    "printability": "STL export supported",
+    "modelVersion": "Rodin Gen-2.5 (per API docs)",
+    "notes": "Pay-by-result: preview before confirming credit spend. Prices and model estimates re-checked on the official pricing page 2026-10-18.",
     "sources": [
       "https://hyper3d.ai/pricing",
-      "https://freedom251.com/apps/hyper3d-rodin/",
-      "https://knois.com/services/hyper3d-rodin"
+      "https://docs.hyper3d.ai/en/api-specification/rodin-gen2-5",
+      "https://on-premises.docs.hyper3d.ai/pack-and-download-asset/prepare-asset"
     ],
-    "complete": false,
-    "affiliateUrl": null
+    "complete": true,
+    "affiliateUrl": null,
+    "freeCommercial": "Unclear – free exports limited to legacy models"
   },
   {
     "slug": "hunyuan3d",
@@ -232,7 +245,8 @@
       "https://huggingface.co/tencent/Hunyuan3D-2.1/raw/main/LICENSE"
     ],
     "complete": true,
-    "affiliateUrl": null
+    "affiliateUrl": null,
+    "freeCommercial": "Open weights: yes, with license conditions (attribution, territory, 1M MAU cap)"
   },
   {
     "slug": "hitem3d",
@@ -266,7 +280,7 @@
     "costPerModel": "n/a",
     "freeTier": "Yes – 100 lifetime credits",
     "exportFormats": [],
-    "license": null,
+    "license": "Commercial use from Pro; free trial non-commercial [third-party source – not confirmed on official page]",
     "features": {
       "texturing": null,
       "rigging": null,
@@ -274,14 +288,15 @@
     },
     "printability": "Strong print focus: Split to Print, Multi-color Print, Smart Layout, Send to printer",
     "modelVersion": null,
-    "notes": "Credit tiers official; prices from third-party reviews. Subscription credits don't roll over; failed generations refunded.",
+    "notes": "Credit tiers official (hitem3d.ai/pricing); prices from AssetHub, which states it read them from the official page on 2026-08-22. Free trial stated as up to ~7 models [third-party source – not confirmed on official page]. Subscription credits don't roll over; credit packs (subscribers only) don't expire; failed generations refunded.",
     "sources": [
       "https://www.hitem3d.ai/pricing",
       "https://assethub.io/blog/hitem3d-pricing",
-      "https://trify3d.com/blog/hi3d-ai-3d-generator-review"
+      "https://static.hitem3d.ai/website/docs/Terms-of-Use.html"
     ],
     "complete": false,
-    "affiliateUrl": null
+    "affiliateUrl": null,
+    "freeCommercial": "No (third-party source)"
   },
   {
     "slug": "csm",
@@ -336,7 +351,8 @@
     ],
     "complete": false,
     "status": "discontinued",
-    "affiliateUrl": null
+    "affiliateUrl": null,
+    "freeCommercial": "Discontinued"
   },
   {
     "slug": "luma-genie",
@@ -364,7 +380,8 @@
     ],
     "complete": false,
     "status": "legacy",
-    "affiliateUrl": null
+    "affiliateUrl": null,
+    "freeCommercial": null
   },
   {
     "slug": "sloyd",
@@ -410,7 +427,8 @@
       "https://www.sloyd.ai/pricing"
     ],
     "complete": true,
-    "affiliateUrl": null
+    "affiliateUrl": null,
+    "freeCommercial": "No – personal use only"
   },
   {
     "slug": "alpha3d",
@@ -463,7 +481,8 @@
       "https://www.alpha3d.io/faq"
     ],
     "complete": true,
-    "affiliateUrl": null
+    "affiliateUrl": null,
+    "freeCommercial": "No free plan"
   },
   {
     "slug": "3dfy",
@@ -501,14 +520,15 @@
       "https://www.gameassetdeals.com/asset/257918/3dfy-prompt-ai-powered-text-to-3d-model-generator"
     ],
     "complete": false,
-    "affiliateUrl": null
+    "affiliateUrl": null,
+    "freeCommercial": null
   },
   {
     "slug": "kaedim",
     "name": "Kaedim",
     "url": "https://www.kaedim3d.com",
     "affiliate": "kaedim",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-18",
     "inputs": "Image, sketch, brief",
     "plans": [
       {
@@ -534,8 +554,15 @@
     ],
     "costPerModel": "$20/geometry or $400/complete asset (Indie & Pro, derived from official plan page)",
     "freeTier": "No (paid trial only)",
-    "exportFormats": [],
-    "license": null,
+    "exportFormats": [
+      "GLB",
+      "glTF",
+      "OBJ",
+      "OBJ+MTL",
+      "FBX",
+      "USD"
+    ],
+    "license": "Subscribers own the IP of models created (ToS §3.2); full ownership & commercial rights",
     "features": {
       "texturing": "Yes – complete assets include textures",
       "rigging": "unknown",
@@ -546,17 +573,19 @@
     "notes": "AI + artist production service. Note: older official FAQ says off-the-shelf plans were closed; current plans page lists them.",
     "sources": [
       "https://www.kaedim3d.com/plans",
-      "https://info.kaedim3d.com/resources/faq"
+      "https://docs.kaedim3d.com/welcome/faq",
+      "https://docs.kaedim3d.com/managing-assets/exporting-assets/download"
     ],
-    "complete": false,
-    "affiliateUrl": null
+    "complete": true,
+    "affiliateUrl": null,
+    "freeCommercial": "No free plan"
   },
   {
     "slug": "spline-ai",
     "name": "Spline AI",
     "url": "https://spline.design/ai",
     "affiliate": "spline-ai",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-18",
     "inputs": "Text, image (AI 3D Generation)",
     "plans": [
       {
@@ -602,12 +631,15 @@
     },
     "printability": "STL export on Pro+",
     "modelVersion": null,
-    "notes": "Spline is a general real-time 3D design tool; AI 3D generation is one feature. Credit cost per 3D generation not published on pricing page.",
+    "notes": "Spline is a general real-time 3D design tool; AI 3D Generation is one feature. Spline does not publish a fixed credit cost per generation – an estimate is shown before each run, and credits are spent on both image previews and the mesh, so one model can cost more than one generation.",
     "sources": [
-      "https://spline.design/pricing"
+      "https://spline.design/pricing",
+      "https://docs.spline.design/account/pricing",
+      "https://docs.spline.design/generate/ai-3d-generation"
     ],
     "complete": false,
-    "affiliateUrl": null
+    "affiliateUrl": null,
+    "freeCommercial": "No AI 3D on free plan"
   },
   {
     "slug": "varco-3d",
@@ -651,7 +683,8 @@
       "https://www.capterra.com/p/10049298/Varco-3D/pricing/"
     ],
     "complete": false,
-    "affiliateUrl": null
+    "affiliateUrl": null,
+    "freeCommercial": null
   },
   {
     "slug": "yvo3d",
@@ -711,39 +744,45 @@
       "https://api.yvo3d.com/docs/generation"
     ],
     "complete": true,
-    "affiliateUrl": null
+    "affiliateUrl": null,
+    "freeCommercial": "Unclear – outputs public under CC BY 4.0, but plan table lists commercial use only on paid plans"
   },
   {
     "slug": "masterpiece-x",
     "name": "Masterpiece X",
     "url": "https://www.masterpiecex.com",
     "affiliate": "masterpiece-x",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-18",
     "inputs": "Text",
     "plans": [
       {
-        "name": "750 credits",
+        "name": "Sign-up bonus",
+        "price": "$0",
+        "credits": "250 credits (one-time)"
+      },
+      {
+        "name": "750 / month",
         "price": "$10.99/mo (was $15)",
         "credits": "750/month"
       },
       {
-        "name": "Tier 2",
+        "name": "1,500 / month",
         "price": "$19.99/mo (was $30)",
-        "credits": "unknown"
+        "credits": "1,500/month"
       },
       {
-        "name": "Tier 3",
+        "name": "3,000 / month",
         "price": "$36.99/mo (was $60)",
-        "credits": "unknown"
+        "credits": "3,000/month"
       },
       {
         "name": "One-off pack",
         "price": "$15",
-        "credits": "unknown"
+        "credits": "750 (purchase as needed)"
       }
     ],
     "costPerModel": "n/a",
-    "freeTier": null,
+    "freeTier": "Yes – 250 free credits on sign-up",
     "exportFormats": [],
     "license": null,
     "features": {
@@ -753,11 +792,12 @@
     },
     "printability": null,
     "modelVersion": null,
-    "notes": "Official pricing page shows credit packs; only the first pack's credit count was readable. API in early access.",
+    "notes": "Credits per generation not published on pricing page. API in early access.",
     "sources": [
       "https://www.masterpiecex.com/pricing"
     ],
     "complete": false,
-    "affiliateUrl": null
+    "affiliateUrl": null,
+    "freeCommercial": null
   }
 ]
