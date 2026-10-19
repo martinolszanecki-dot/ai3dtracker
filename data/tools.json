@@ -4,7 +4,7 @@
     "name": "Meshy",
     "url": "https://www.meshy.ai",
     "affiliate": "meshy",
-    "dateChecked": "2026-10-18",
+    "dateChecked": "2026-10-19",
     "inputs": "Text, image, multi-view image",
     "plans": [
       {
@@ -51,20 +51,23 @@
     "license": "Paid: you own assets. Free: CC BY 4.0 (commercial use with attribution).",
     "features": {
       "texturing": "Yes (AI texturing, upload FBX/OBJ/STL/GLTF/GLB)",
-      "rigging": "Yes – animation with 600+ motions on paid plans",
-      "retopology": "unknown"
+      "rigging": "Yes – auto-rigging (5 credits via API); animation with 600+ motions on paid plans",
+      "retopology": "Yes – Remesh (5 credits) and Smart Topology models Meshy T2/T2.5 (triangle-only, 100–30,000 faces on T2.5)"
     },
     "printability": "STL export available; marketed to 3D-printing hobbyists",
-    "modelVersion": "Meshy 6 (\"Meshy 6 Lite\" referenced on pricing page)",
-    "notes": "DCC bridge: Roblox, Blender, Godot, Unity, Unreal, Maya, 3ds Max. API available. 50% off first month for new users.",
+    "modelVersion": "Meshy 7.1 (API 'latest'); Meshy 6 and Meshy 6 Lite still offered; Meshy T2.5 Smart Topology model added Oct 15, 2026",
+    "notes": "DCC bridge: Roblox, Blender, Godot, Unity, Unreal, Maya, 3ds Max. API available. 50% off first month for new users. New Oct 16, 2026: Meshy Edit – change only a selected part of a model with text or up to 5 reference images (20 credits per edit, refunded on failure). meshy-5 retired in the API on Oct 10, 2026; the 'lowpoly' model type retires Oct 30, 2026.",
     "sources": [
       "https://www.meshy.ai/pricing",
       "https://help.meshy.ai/en/articles/10000507-how-many-credits-does-each-generation-task-cost",
-      "https://help.meshy.ai/en/articles/16102098-can-i-use-meshy-assets-commercially"
+      "https://help.meshy.ai/en/articles/16102098-can-i-use-meshy-assets-commercially",
+      "https://docs.meshy.ai/en/api/pricing",
+      "https://docs.meshy.ai/en/api/changelog",
+      "https://www.meshy.ai/blog/meshy-edit"
     ],
     "complete": true,
     "affiliateUrl": "https://www.meshy.ai/?utm_medium=affiliate&utm_source=promotekit&via=martinOL",
-    "creditCosts": "Meshy 6: 20 credits untextured; 30 with 2K/4K texture; 35 with 8K texture (text- or image-to-3D). Retexture 10–15.",
+    "creditCosts": "Meshy 7.1 / Meshy 6: 20 credits untextured; 30 with 2K/4K texture; 35 with 8K texture (text- or image-to-3D); Ultra geometry +5 (7.1 only). Meshy 6 Lite: 5 untextured / 15 textured (2K only). Retexture 10–15. Meshy Edit: 20 credits per edit.",
     "freeCommercial": "Yes – CC BY 4.0 (credit Meshy)"
   },
   {
@@ -72,7 +75,7 @@
     "name": "Tripo",
     "url": "https://www.tripo3d.ai",
     "affiliate": "tripo",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-19",
     "inputs": "Text, image, multi-view image",
     "plans": [
       {
@@ -109,28 +112,31 @@
     "license": "Free: Tripo retains rights, non-commercial (ToS 5.2.1). Paid: full commercial rights; outputs not used for training (ToS 5.2.2).",
     "features": {
       "texturing": "Yes – up to 4K (8K on Max)",
-      "rigging": "unknown",
+      "rigging": "Yes – auto-rigging & animation retargeting (Tripo Rig v2.5, per Tripo API changelog)",
       "retopology": "Yes – retopology, Smart Mesh, part-based retopology"
     },
     "printability": "STL (geometry only) and 3MF exports; official help guide on preparing models for 3D printing (verify dimensions in slicer – STL has no units)",
-    "modelVersion": "H2.5 referenced on pricing page",
+    "modelVersion": "Tripo H3.1 (v3.1-20260211, current flagship, up to 2M faces) and P1.0 Smart Mesh (Mar 2026); pricing page still references H2.5 for some limits",
     "notes": "DCC bridge: Blender, 3ds Max, Unity, Unreal, Maya, Cocos, Godot, ZBrush. Smart segmentation.",
     "sources": [
       "https://www.tripo3d.ai/pricing",
       "https://www.tripo3d.ai/help/getting-started/what-3d-file-formats-do-you-support",
       "https://www.tripo3d.ai/help/features/how-to-prepare-models-for-3d-printing",
-      "https://www.tripo3d.ai/help/privacy-policy/how-to-use-tripo-models-commercially"
+      "https://www.tripo3d.ai/help/privacy-policy/how-to-use-tripo-models-commercially",
+      "https://developers.tripo3d.ai/en/models/v3-1",
+      "https://docs.tripo3d.ai/get-started/changelog.html"
     ],
     "complete": true,
     "affiliateUrl": null,
-    "freeCommercial": "No – non-commercial"
+    "freeCommercial": "No – non-commercial",
+    "creditCosts": "API, H3.1: text-to-3D 10 / 20 / 30 credits (no / standard / detailed texture); image- or multiview-to-3D 20 / 30 / 40; +20 detailed geometry, +5 quad mesh, +10 smart low-poly, +20 generate in parts (Tripo developer docs). Studio: Tripo estimates 3,000 credits ≈ 200 models on Pro (≈15 credits/model, derived)."
   },
   {
     "slug": "rodin",
     "name": "Rodin (Hyper3D)",
     "url": "https://hyper3d.ai",
     "affiliate": "rodin",
-    "dateChecked": "2026-10-18",
+    "dateChecked": "2026-10-19",
     "inputs": "Text, image, multi-image",
     "plans": [
       {
@@ -141,12 +147,17 @@
       {
         "name": "Creator",
         "price": "$30/mo; $24/mo billed yearly ($288)",
-        "credits": "About 60 models/month (official estimate)"
+        "credits": "30 credits/month ≈ 60 models (official estimate); bigger tiers $60–$240/mo"
       },
       {
         "name": "Business",
         "price": "$120/mo; $96/mo billed yearly ($1,152)",
-        "credits": "About 416 models/month (official estimate); full API"
+        "credits": "208 credits/month ≈ 416 models (official estimate); full API; bigger tiers up to $1,200/mo"
+      },
+      {
+        "name": "Education",
+        "price": "$15 (verified students/educators)",
+        "credits": "Creator benefits at education pricing"
       },
       {
         "name": "Enterprise",
@@ -175,8 +186,8 @@
       "retopology": "Smart Low-Poly; High-Poly Quads (Business)"
     },
     "printability": "STL export supported",
-    "modelVersion": "Rodin Gen-2.5 (per API docs)",
-    "notes": "Pay-by-result: preview before confirming credit spend. Prices and model estimates re-checked on the official pricing page 2026-10-18.",
+    "modelVersion": "Rodin Gen-2.5 (Gen-3 teased by Hyper3D for 2026, not released)",
+    "notes": "Pay-by-result: preview before confirming credit spend. Subscription credit price: Creator $1/credit monthly ($0.80 yearly), Business $0.58 ($0.46 yearly); direct credits $1.5. Prices re-checked on the official pricing page 2026-10-19 (unchanged).",
     "sources": [
       "https://hyper3d.ai/pricing",
       "https://docs.hyper3d.ai/en/api-specification/rodin-gen2-5",
@@ -189,11 +200,16 @@
   {
     "slug": "hunyuan3d",
     "name": "Hunyuan3D (Tencent)",
-    "url": "https://3d.hunyuan.tencent.com",
+    "url": "https://3d.hunyuanglobal.com",
     "affiliate": "hunyuan3d",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-19",
     "inputs": "Text, image, sketch, multi-view",
     "plans": [
+      {
+        "name": "Global platform (free)",
+        "price": "$0",
+        "credits": "20 free generations/day (Tencent press release)"
+      },
       {
         "name": "API prepaid 1,000 credits",
         "price": "$15 (API credit pack)",
@@ -215,13 +231,18 @@
         "credits": "—"
       },
       {
+        "name": "API postpaid",
+        "price": "$0.02/credit (daily settlement)",
+        "credits": "—"
+      },
+      {
         "name": "Open weights",
         "price": "Free (self-hosted)",
         "credits": "—"
       }
     ],
-    "costPerModel": "≈$0.20–0.375 per Professional generation (15–25 credits at $0.0135–0.015); Express 15 credits ≈$0.20–0.23",
-    "freeTier": "Open-weight models free to self-host (license terms apply); 200 trial credits/user listed in billing doc",
+    "costPerModel": "≈$0.34–0.375 per textured Professional generation (25 credits at $0.0135–0.015 prepaid; $0.50 postpaid); geometry-only 15 credits ≈$0.20–0.23; Express 15 credits ≈$0.20–0.23",
+    "freeTier": "Yes – 20 free generations/day on the global platform (per Tencent); API: 200 one-time trial credits; open weights 2.1 free to self-host (license excludes EU, UK, South Korea)",
     "exportFormats": [
       "OBJ",
       "GLB",
@@ -229,81 +250,93 @@
       "USDZ",
       "FBX"
     ],
-    "license": "Hosted API: Tencent Cloud ToS. Open weights (2.1): Tencent Hunyuan community license – territory-limited, attribution, >1M MAU requires separate license.",
+    "license": "Hosted: Tencent platform / Tencent Cloud ToS. Open weights (2.1): Tencent Hunyuan 3D 2.1 community license – does not apply in the EU, UK or South Korea; attribution; >1M MAU requires a separate license.",
     "features": {
       "texturing": "Yes – PBR, texture edit",
       "rigging": "Yes – auto rigging add-on (10 credits)",
       "retopology": "Yes – smart topology/quad (50 credits), LowPoly mode, UV unfold"
     },
     "printability": "STL output supported",
-    "modelVersion": "Hunyuan3D 2.1 (open weights, June 2025); hosted Professional/Express lines",
-    "notes": "Consumer site 3d.hunyuan.tencent.com errored on 2026-10-16; pricing shown is Tencent Cloud API.",
+    "modelVersion": "Hosted: Hunyuan3D 3.1 (global platform, Jan 2026, up to 8 input views; per Tencent Cloud); open weights: Hunyuan3D 2.1 (June 2025)",
+    "notes": "Global consumer platform: 3d.hunyuanglobal.com (blocked our automated check on 2026-10-19). API pricing re-checked on the Tencent Cloud billing doc 2026-10-19 (unchanged): Professional Normal 25 credits, LowPoly 30, Geometry 15, Sketch 25; +10 each for multi-view, PBR or custom face count.",
     "sources": [
       "https://www.tencentcloud.com/document/product/1281/74121",
       "https://www.tencentcloud.com/techpedia/148275?lang=en",
       "https://intl.cloud.tencent.com/document/product/1284/75976",
-      "https://huggingface.co/tencent/Hunyuan3D-2.1/raw/main/LICENSE"
+      "https://huggingface.co/tencent/Hunyuan3D-2.1/raw/main/LICENSE",
+      "https://www.tencent.com/tencent-announces-global-launch-of-hunyuan-3d-engine-to-empower-creators-with-advanced-creation-tools/",
+      "https://www.tencentcloud.com/techpedia/146815"
     ],
     "complete": true,
     "affiliateUrl": null,
-    "freeCommercial": "Open weights: yes, with license conditions (attribution, territory, 1M MAU cap)"
+    "freeCommercial": "Open weights: yes outside the EU/UK/South Korea, with license conditions (attribution, 1M MAU cap)"
   },
   {
     "slug": "hitem3d",
     "name": "Hitem3D (Hi3D)",
     "url": "https://www.hitem3d.ai",
     "affiliate": "hitem3d",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-19",
     "inputs": "Image, multi-view image",
     "plans": [
       {
         "name": "Free",
         "price": "$0",
-        "credits": "100 credits lifetime (official)"
+        "credits": "100 trial credits (lifetime), up to 7 models saved, no downloads"
       },
       {
         "name": "Pro",
-        "price": "$19.90/mo [third-party source – not confirmed on official page]",
-        "credits": "1,000/month (official)"
+        "price": "$19.90/mo; $9.95/mo billed annually ($119.40/yr)",
+        "credits": "1,000/month (up to 100 models)"
       },
       {
         "name": "Max",
-        "price": "$39.90/mo [third-party source – not confirmed on official page]",
-        "credits": "2,400/month (official)"
+        "price": "$39.90/mo; $19.95/mo billed annually ($239.40/yr)",
+        "credits": "2,400/month (up to 240 models)"
       },
       {
         "name": "Ultra",
-        "price": "$129.90/mo [third-party source – not confirmed on official page]",
-        "credits": "8,000/month (official)"
+        "price": "$129.90/mo; $64.95/mo billed annually ($779.40/yr)",
+        "credits": "8,000/month (up to 800 models)"
+      },
+      {
+        "name": "Credit packs (subscribers only)",
+        "price": "$20 per 1,000 credits (packs of 1,000–20,000)",
+        "credits": "Never expire; 1,000 ≈ 100 v2.1 Fast or ≈ 20 v3.0 Quality geometry models"
       }
     ],
-    "costPerModel": "n/a",
-    "freeTier": "Yes – 100 lifetime credits",
-    "exportFormats": [],
-    "license": "Commercial use from Pro; free trial non-commercial [third-party source – not confirmed on official page]",
+    "costPerModel": "≈$0.20 (Pro monthly, up to 100 models) or ≈$0.10 billed annually – derived from Hitem3D's own figures; v3.0 Quality uses ≈50 credits (≈$1.00 per model at pack price)",
+    "freeTier": "Yes – 100 lifetime trial credits (up to 7 models); no downloads, no commercial use",
+    "exportFormats": [
+      "FBX",
+      "OBJ",
+      "STL",
+      "GLB"
+    ],
+    "license": "Free: public models (CC BY 4.0), no commercial use. Pro/Max/Ultra: private models & commercial use.",
     "features": {
-      "texturing": null,
-      "rigging": null,
-      "retopology": null
+      "texturing": "Yes – texture generation incl. Stylized Texture (per site menu)",
+      "rigging": "unknown",
+      "retopology": "unknown"
     },
-    "printability": "Strong print focus: Split to Print, Multi-color Print, Smart Layout, Send to printer",
-    "modelVersion": null,
-    "notes": "Credit tiers official (hitem3d.ai/pricing); prices from AssetHub, which states it read them from the official page on 2026-08-22. Free trial stated as up to ~7 models [third-party source – not confirmed on official page]. Subscription credits don't roll over; credit packs (subscribers only) don't expire; failed generations refunded.",
+    "printability": "Strong print focus: Split to Print, Multi-color Print, Smart Layout, Send to printer; slicer integrations listed: Bambu Studio, OrcaSlicer, Snapmaker, Creality Print, ElegooSlicer",
+    "modelVersion": "Hi3D v3.0 (Quality) and v2.1 (Fast)",
+    "notes": "Prices confirmed on the official pricing page on 2026-10-19 (previously third-party only). Annual prices are shown as '50% off'. Subscription credits don't roll over and refresh every 30 days; credit packs (subscribers only) don't expire; failed generations refunded. Also integrates with ComfyUI and Blender.",
     "sources": [
       "https://www.hitem3d.ai/pricing",
-      "https://assethub.io/blog/hitem3d-pricing",
+      "https://www.hitem3d.ai/3dmodeling/2d-to-3d",
       "https://static.hitem3d.ai/website/docs/Terms-of-Use.html"
     ],
-    "complete": false,
+    "complete": true,
     "affiliateUrl": null,
-    "freeCommercial": "No (third-party source)"
+    "freeCommercial": "No – trial is non-commercial, no downloads"
   },
   {
     "slug": "csm",
     "name": "CSM (Common Sense Machines)",
     "url": "https://www.csm.ai",
     "affiliate": "csm",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-19",
     "inputs": "Image, text, sketch (historical)",
     "plans": [
       {
@@ -343,7 +376,7 @@
     },
     "printability": null,
     "modelVersion": null,
-    "notes": "DISCONTINUED: CSM Cube and APIs shut down 5 Jan 2026 (announcement via Reddit); Alphabet acquired CSM, closing 24 Jan 2026 (third-party reports). Site unreachable. Plans shown are historical.",
+    "notes": "DISCONTINUED: CSM Cube and APIs shut down 5 Jan 2026 (announcement via Reddit); Alphabet acquired CSM, closing 24 Jan 2026 (third-party reports). Site unreachable. Plans shown are historical. Still unreachable on 2026-10-19.",
     "sources": [
       "https://www.reddit.com/r/TopologyAI/comments/1pxo2n5/csm_cube_is_shutting_down_on_january_5th_2026/",
       "https://2dto3d.app/compare/csm-ai-vs-2dto3d",
@@ -388,7 +421,7 @@
     "name": "Sloyd",
     "url": "https://www.sloyd.ai",
     "affiliate": "sloyd",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-19",
     "inputs": "Text, image, multi-image, templates",
     "plans": [
       {
@@ -428,15 +461,16 @@
     ],
     "complete": true,
     "affiliateUrl": null,
-    "freeCommercial": "No – personal use only"
+    "freeCommercial": "No – personal use only",
+    "creditCosts": "Standard text/image-to-3D is unlimited (fair use) on Plus/Pro. Monthly credits are spent on: multi-image to 3D 20, split to parts 20, image to scene 30, video/text to motion 30, Ultra 500K-poly generation 5."
   },
   {
     "slug": "alpha3d",
     "name": "Alpha3D",
     "url": "https://www.alpha3d.io",
     "affiliate": "alpha3d",
-    "dateChecked": "2026-10-16",
-    "inputs": "Image, multi-view (2–8 angles by plan), text (via image step)",
+    "dateChecked": "2026-10-19",
+    "inputs": "Image, text, multi-view (up to 4 views; 8 on Creator Pro)",
     "plans": [
       {
         "name": "Tester",
@@ -446,20 +480,25 @@
       {
         "name": "Basic",
         "price": "€16/mo",
-        "credits": "1,000 3D credits (~35 models) + 3,500 Tokens"
+        "credits": "1,000 3D credits (~33–35 models) + 3,500 Tokens"
       },
       {
         "name": "Creator",
         "price": "€100/mo",
-        "credits": "3,200 3D credits (~100 models) + 10,000 Tokens"
+        "credits": "3,200 3D credits (~107 models) + 10,000 Tokens"
+      },
+      {
+        "name": "Creator Pro",
+        "price": "€150/mo",
+        "credits": "10,000 3D credits (~333 models) + 32,000 Tokens"
       },
       {
         "name": "Enterprise",
-        "price": "from €200/user/mo",
-        "credits": "Custom"
+        "price": "Custom",
+        "credits": "Custom credits, dedicated GPU node"
       }
     ],
-    "costPerModel": "≈€1.67 (Tester), ≈€0.46 (Basic), ≈€1.00 (Creator) – derived from Alpha3D's own '~N models' figures; 42 credits per High-Res PBR job",
+    "costPerModel": "≈€1.67 (Tester), ≈€0.46 (Basic), ≈€0.93 (Creator), ≈€0.45 (Creator Pro) – derived from Alpha3D's own '~N models' figures; 42 credits per High-Res PBR job",
     "freeTier": "No free plan (sign-up Token bonus only)",
     "exportFormats": [
       "GLB",
@@ -475,7 +514,7 @@
     },
     "printability": "STL via conversion; Ultra High Res 500K–1.5M faces suggested for printing",
     "modelVersion": "Alpha-5",
-    "notes": "REST API and MCP server included on every plan (per pricing page). Plan details not readable in fetch.",
+    "notes": "REST API and MCP server included on every plan (per pricing page). Blender add-on now live. Annual billing saves 20%; promo on the official page: 50% off the first 3 months with code WLCMBCK50. Note: the USD view of the pricing page showed Creator at $54/mo on 2026-10-19, which conflicts with the €100 EUR list price – check at checkout.",
     "sources": [
       "https://www.alpha3d.io/pricing",
       "https://www.alpha3d.io/faq"
@@ -489,22 +528,22 @@
     "name": "3DFY.ai",
     "url": "https://3dfy.ai",
     "affiliate": "3dfy",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-19",
     "inputs": "Text",
     "plans": [
       {
-        "name": "Free trial",
+        "name": "Free trial (historical)",
         "price": "$0",
         "credits": "10 free generations [third-party source – not confirmed on official page]"
       },
       {
-        "name": "API",
+        "name": "API (historical)",
         "price": "$1 per model [third-party source – not confirmed on official page]",
         "credits": "by arrangement"
       }
     ],
-    "costPerModel": "$1 (API) [third-party source – not confirmed on official page]",
-    "freeTier": "10 free generations [third-party source – not confirmed on official page]",
+    "costPerModel": "n/a (historical: $1 per model via API [third-party source – not confirmed on official page])",
+    "freeTier": null,
     "exportFormats": [],
     "license": null,
     "features": {
@@ -514,21 +553,23 @@
     },
     "printability": null,
     "modelVersion": null,
-    "notes": "Official site timed out (504) on 2026-10-16; data from third-party listings only.",
+    "notes": "APPEARS DISCONTINUED: 3DFY.ai announced on LinkedIn (July 2025) that the team evolved into 3D Foundry Labs, a custom AI/3D development studio that does not offer off-the-shelf tools. On 2026-10-19 www.3dfy.ai showed a Namecheap 'recently registered' parking page and 3dfy.ai timed out. Plans shown are historical (third-party listings).",
     "sources": [
+      "https://www.linkedin.com/posts/3d-fy_3d-ai-customdevelopment-activity-7355959485745508352-BGEc",
       "https://3dfy.ai",
       "https://www.gameassetdeals.com/asset/257918/3dfy-prompt-ai-powered-text-to-3d-model-generator"
     ],
     "complete": false,
     "affiliateUrl": null,
-    "freeCommercial": null
+    "freeCommercial": "Discontinued",
+    "status": "discontinued"
   },
   {
     "slug": "kaedim",
     "name": "Kaedim",
     "url": "https://www.kaedim3d.com",
     "affiliate": "kaedim",
-    "dateChecked": "2026-10-18",
+    "dateChecked": "2026-10-19",
     "inputs": "Image, sketch, brief",
     "plans": [
       {
@@ -585,7 +626,7 @@
     "name": "Spline AI",
     "url": "https://spline.design/ai",
     "affiliate": "spline-ai",
-    "dateChecked": "2026-10-18",
+    "dateChecked": "2026-10-19",
     "inputs": "Text, image (AI 3D Generation)",
     "plans": [
       {
@@ -631,7 +672,7 @@
     },
     "printability": "STL export on Pro+",
     "modelVersion": null,
-    "notes": "Spline is a general real-time 3D design tool; AI 3D Generation is one feature. Spline does not publish a fixed credit cost per generation – an estimate is shown before each run, and credits are spent on both image previews and the mesh, so one model can cost more than one generation.",
+    "notes": "Spline is a general real-time 3D design tool; AI 3D Generation is one feature. Spline does not publish a fixed credit cost per generation – an estimate is shown before each run, and credits are spent on both image previews and the mesh, so one model can cost more than one generation. Extra AI credits: +1,000 per seat for $5/month (up to 10,000 on Hobby/Pro, 20,000 on Max). Prices re-checked 2026-10-19 (unchanged).",
     "sources": [
       "https://spline.design/pricing",
       "https://docs.spline.design/account/pricing",
@@ -691,7 +732,7 @@
     "name": "YVO3D",
     "url": "https://www.yvo3d.com",
     "affiliate": "yvo3d",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-19",
     "inputs": "Image, text",
     "plans": [
       {
@@ -737,7 +778,7 @@
     },
     "printability": "STL export (mesh only, no textures)",
     "modelVersion": "ULTIMA TRUE / ULTIMA PRIME, FAST TRUE/PRIME",
-    "notes": "Not verified on 2026-10-16.",
+    "notes": "Plans re-checked on the official pricing page 2026-10-19 (unchanged). Annual billing saves 20%. Credit packs (paid subscribers) expire 3 months after purchase. Model storage: Free 10 days, Pro 30 days, ULTIMA permanent. API 'Hyper Mode' halves texture cost.",
     "sources": [
       "https://yvo3d.com/subscribe",
       "https://api.yvo3d.com/docs/pricing",
@@ -752,7 +793,7 @@
     "name": "Masterpiece X",
     "url": "https://www.masterpiecex.com",
     "affiliate": "masterpiece-x",
-    "dateChecked": "2026-10-18",
+    "dateChecked": "2026-10-19",
     "inputs": "Text",
     "plans": [
       {
@@ -792,12 +833,14 @@
     },
     "printability": null,
     "modelVersion": null,
-    "notes": "Credits per generation not published on pricing page. API in early access.",
+    "notes": "Credits per generation not published on pricing page. API in early access. As of 2026-10-19 masterpiecex.com leads with WorldEngen (an AI co-pilot for 3D scene creation with Blender/Unity/Unreal), and the site footer lists the text-to-3D '3D Web Generator App' as Legacy. Credit-pack prices unchanged.",
     "sources": [
-      "https://www.masterpiecex.com/pricing"
+      "https://www.masterpiecex.com/pricing",
+      "https://www.masterpiecex.com"
     ],
     "complete": false,
     "affiliateUrl": null,
-    "freeCommercial": null
+    "freeCommercial": null,
+    "status": "legacy"
   }
 ]
