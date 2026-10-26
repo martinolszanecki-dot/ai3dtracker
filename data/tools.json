@@ -4,7 +4,7 @@
     "name": "Meshy",
     "url": "https://www.meshy.ai",
     "affiliate": "meshy",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Text, image, multi-view image",
     "plans": [
       {
@@ -56,7 +56,7 @@
     },
     "printability": "STL export available; marketed to 3D-printing hobbyists",
     "modelVersion": "Meshy 7.1 (API 'latest'); Meshy 6 and Meshy 6 Lite still offered; Meshy T2.5 Smart Topology model added Oct 15, 2026",
-    "notes": "DCC bridge: Roblox, Blender, Godot, Unity, Unreal, Maya, 3ds Max. API available. 50% off first month for new users. New Oct 16, 2026: Meshy Edit – change only a selected part of a model with text or up to 5 reference images (20 credits per edit, refunded on failure). meshy-5 retired in the API on Oct 10, 2026; the 'lowpoly' model type retires Oct 30, 2026.",
+    "notes": "DCC bridge: Roblox, Blender, Godot, Unity, Unreal, Maya, 3ds Max. API available. 50% off first month for new users. New Oct 16, 2026: Meshy Edit – change only a selected part of a model with text or up to 5 reference images (20 credits per edit, refunded on failure). meshy-5 retired in the API on Oct 10, 2026; the 'lowpoly' model type retires Oct 30, 2026. API changelog (checked 2026-10-26): Oct 19 – Keychain/Fridge Magnet export_resolution capped at 512; Oct 21 – X-Meshy-Metadata request header (Studio/Enterprise); Oct 23 – texture_image_url deprecated on Rigging. Plan prices unchanged on 2026-10-26.",
     "sources": [
       "https://www.meshy.ai/pricing",
       "https://help.meshy.ai/en/articles/10000507-how-many-credits-does-each-generation-task-cost",
@@ -75,7 +75,7 @@
     "name": "Tripo",
     "url": "https://www.tripo3d.ai",
     "affiliate": "tripo",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Text, image, multi-view image",
     "plans": [
       {
@@ -113,18 +113,21 @@
     "features": {
       "texturing": "Yes – up to 4K (8K on Max)",
       "rigging": "Yes – auto-rigging & animation retargeting (Tripo Rig v2.5, per Tripo API changelog)",
-      "retopology": "Yes – retopology, Smart Mesh, part-based retopology"
+      "retopology": "Yes – retopology, Smart Mesh P2.0 native quads, part-based retopology; Segmentation v2 (Simple 3–6 / Balanced 6–15 / Detailed 15+ parts)"
     },
     "printability": "STL (geometry only) and 3MF exports; official help guide on preparing models for 3D printing (verify dimensions in slicer – STL has no units)",
-    "modelVersion": "Tripo H3.1 (v3.1-20260211, current flagship, up to 2M faces) and P1.0 Smart Mesh (Mar 2026); pricing page still references H2.5 for some limits",
-    "notes": "DCC bridge: Blender, 3ds Max, Unity, Unreal, Maya, Cocos, Godot, ZBrush. Smart segmentation.",
+    "modelVersion": "Tripo H3.1 (v3.1-20260211, flagship, up to 2M faces); Smart Mesh P2.0 (API snapshot P2-20260801, labelled Preview in the developer docs) with native quad topology – up to 50,000 triangles or 25,000 quads; P1.0 (P1-20260311) still available",
+    "notes": "DCC bridge: Blender, 3ds Max, Unity, Unreal, Maya, Cocos, Godot, ZBrush. Smart segmentation. Smart Mesh P2.0: every user gets 2 free single-image generations; multi-view input and continued access need a subscription; Mesh Edit 3 free edits per model on Pro, unlimited on Max/Team, then 50 credits per edit (Tripo blog). API P2 costs 100–130 credits per generation (developer docs). Plan prices unchanged on 2026-10-26.",
     "sources": [
       "https://www.tripo3d.ai/pricing",
       "https://www.tripo3d.ai/help/getting-started/what-3d-file-formats-do-you-support",
       "https://www.tripo3d.ai/help/features/how-to-prepare-models-for-3d-printing",
       "https://www.tripo3d.ai/help/privacy-policy/how-to-use-tripo-models-commercially",
       "https://developers.tripo3d.ai/en/models/v3-1",
-      "https://docs.tripo3d.ai/get-started/changelog.html"
+      "https://docs.tripo3d.ai/get-started/changelog.html",
+      "https://www.tripo3d.ai/blog/tripo-p2-0-preview",
+      "https://developers.tripo3d.com/en/models/p2",
+      "https://www.tripo3d.ai/blog/tripo-segmentation-v2"
     ],
     "complete": true,
     "affiliateUrl": null,
@@ -136,7 +139,7 @@
     "name": "Rodin (Hyper3D)",
     "url": "https://hyper3d.ai",
     "affiliate": "rodin",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Text, image, multi-image",
     "plans": [
       {
@@ -187,7 +190,7 @@
     },
     "printability": "STL export supported",
     "modelVersion": "Rodin Gen-2.5 (Gen-3 teased by Hyper3D for 2026, not released)",
-    "notes": "Pay-by-result: preview before confirming credit spend. Subscription credit price: Creator $1/credit monthly ($0.80 yearly), Business $0.58 ($0.46 yearly); direct credits $1.5. Prices re-checked on the official pricing page 2026-10-19 (unchanged).",
+    "notes": "Pay-by-result: preview before confirming credit spend. Subscription credit price: Creator $1/credit monthly ($0.80 yearly), Business $0.58 ($0.46 yearly); direct credits $1.5. Prices re-checked on the official pricing page 2026-10-19 (unchanged). Re-checked 2026-10-26: prices unchanged; Gen-2.5 still the current model.",
     "sources": [
       "https://hyper3d.ai/pricing",
       "https://docs.hyper3d.ai/en/api-specification/rodin-gen2-5",
@@ -200,9 +203,9 @@
   {
     "slug": "hunyuan3d",
     "name": "Hunyuan3D (Tencent)",
-    "url": "https://3d.hunyuanglobal.com",
+    "url": "https://hy3d.tencent.ai",
     "affiliate": "hunyuan3d",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Text, image, sketch, multi-view",
     "plans": [
       {
@@ -258,8 +261,9 @@
     },
     "printability": "STL output supported",
     "modelVersion": "Hosted: Hunyuan3D 3.1 (global platform, Jan 2026, up to 8 input views; per Tencent Cloud); open weights: Hunyuan3D 2.1 (June 2025)",
-    "notes": "Global consumer platform: 3d.hunyuanglobal.com (blocked our automated check on 2026-10-19). API pricing re-checked on the Tencent Cloud billing doc 2026-10-19 (unchanged): Professional Normal 25 credits, LowPoly 30, Geometry 15, Sketch 25; +10 each for multi-view, PBR or custom face count.",
+    "notes": "Global consumer platform is now branded Tencent HY 3D Global: 3d.hunyuanglobal.com redirects to hy3d.tencent.ai (checked 2026-10-26), which shows a notice that the Laboratory features 3D Smart Topology and Sketch to 3D are being taken offline and merged into 3D Studio (Geometry Generation, Retopology, Texture Painting). The 20 free generations/day figure could not be re-verified (login wall). API pricing re-checked on the Tencent Cloud billing doc 2026-10-26 (unchanged): Professional Normal 25 credits, LowPoly 30, Geometry 15, Sketch 25; +10 each for multi-view, PBR or custom face count.",
     "sources": [
+      "https://hy3d.tencent.ai/",
       "https://www.tencentcloud.com/document/product/1281/74121",
       "https://www.tencentcloud.com/techpedia/148275?lang=en",
       "https://intl.cloud.tencent.com/document/product/1284/75976",
@@ -276,7 +280,7 @@
     "name": "Hitem3D (Hi3D)",
     "url": "https://www.hitem3d.ai",
     "affiliate": "hitem3d",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Image, multi-view image",
     "plans": [
       {
@@ -292,20 +296,20 @@
       {
         "name": "Max",
         "price": "$39.90/mo; $19.95/mo billed annually ($239.40/yr)",
-        "credits": "2,400/month (up to 240 models)"
+        "credits": "4,000/month (up to 400 models)"
       },
       {
         "name": "Ultra",
-        "price": "$129.90/mo; $64.95/mo billed annually ($779.40/yr)",
-        "credits": "8,000/month (up to 800 models)"
+        "price": "$99.90/mo; $49.92/mo billed annually ($599.00/yr)",
+        "credits": "10,000/month (up to 1,000 models), 30 concurrent tasks"
       },
       {
         "name": "Credit packs (subscribers only)",
-        "price": "$20 per 1,000 credits (packs of 1,000–20,000)",
-        "credits": "Never expire; 1,000 ≈ 100 v2.1 Fast or ≈ 20 v3.0 Quality geometry models"
+        "price": "$20 per 1,000 credits (packs of 1,000–20,000); currently 'Buy 1 Get 1' (e.g. 1,000 + 1,000 for $20)",
+        "credits": "Never expire"
       }
     ],
-    "costPerModel": "≈$0.20 (Pro monthly, up to 100 models) or ≈$0.10 billed annually – derived from Hitem3D's own figures; v3.0 Quality uses ≈50 credits (≈$1.00 per model at pack price)",
+    "costPerModel": "≈$0.20 (Pro monthly, 10-credit v2.1 Fast) or ≈$0.60 for v3.0 Quality (30 credits); ≈$0.10 / ≈$0.30 billed annually; Max/Ultra ≈$0.10 per Fast model monthly – derived from Hitem3D's own figures (Hitem3D says 'as low as $0.05/model')",
     "freeTier": "Yes – 100 lifetime trial credits (up to 7 models); no downloads, no commercial use",
     "exportFormats": [
       "FBX",
@@ -320,23 +324,28 @@
       "retopology": "unknown"
     },
     "printability": "Strong print focus: Split to Print, Multi-color Print, Smart Layout, Send to printer; slicer integrations listed: Bambu Studio, OrcaSlicer, Snapmaker, Creality Print, ElegooSlicer",
-    "modelVersion": "Hi3D v3.0 (Quality) and v2.1 (Fast)",
-    "notes": "Prices confirmed on the official pricing page on 2026-10-19 (previously third-party only). Annual prices are shown as '50% off'. Subscription credits don't roll over and refresh every 30 days; credit packs (subscribers only) don't expire; failed generations refunded. Also integrates with ComfyUI and Blender.",
+    "modelVersion": "Hi3D v3.0 (Quality, Master) and v2.1 (Fast/Quality); Hi3D 1.0 (formerly Sparc3D) open-sourced Oct 23, 2026",
+    "notes": "Re-checked 2026-10-26 on the official pricing page: Max now 4,000 credits/month (was 2,400) at the same price; Ultra now $99.90/mo or $49.92/mo billed annually (was $129.90 / $64.95) with 10,000 credits (was 8,000); v3.0 Quality now 30 credits. The page runs a '50% off first month and first year' promotion and says the annual price is only available during it. The site now brands itself Hi3D (canonical www.hi3d.ai; www.hitem3d.ai serves the same site). Hi3D 1.0 open weights (Oct 23, 2026): a refinement model that turns a coarse mesh + reference image into high-res geometry; Hi3D Open License v1.0 allows commercial use, products over 200,000 MAU or USD 1M monthly revenue need a separate license, integrations must show 'Powered by Hi3D 1.0' (generated output files alone don't trigger this). Subscription credits refresh every 30 days and don't roll over; failed generations refunded. Integrates with ComfyUI and Blender.",
     "sources": [
       "https://www.hitem3d.ai/pricing",
+      "https://www.hi3d.ai/hi3d-1-0-open-source",
+      "https://github.com/hi3d-official/Hi3Dv1.0",
+      "https://raw.githubusercontent.com/hi3d-official/Hi3Dv1.0/main/LICENSE",
+      "https://huggingface.co/hi3d-official/Hi3Dv1.0",
       "https://www.hitem3d.ai/3dmodeling/2d-to-3d",
       "https://static.hitem3d.ai/website/docs/Terms-of-Use.html"
     ],
     "complete": true,
     "affiliateUrl": null,
-    "freeCommercial": "No – trial is non-commercial, no downloads"
+    "freeCommercial": "No – trial is non-commercial, no downloads",
+    "creditCosts": "Per generation (official pricing page, 2026-10-26): v3.0 Quality 30, Master 130; v2.1 Fast 10 / Quality 30; v2.0 Balanced 20 / Quality 30; Stylized Texture 10; Split to Print 20; Multi-color Print 10; Relief 10."
   },
   {
     "slug": "csm",
     "name": "CSM (Common Sense Machines)",
     "url": "https://www.csm.ai",
     "affiliate": "csm",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Image, text, sketch (historical)",
     "plans": [
       {
@@ -390,9 +399,9 @@
   {
     "slug": "luma-genie",
     "name": "Luma Genie",
-    "url": "https://lumalabs.ai/genie",
+    "url": "https://lumalabs.ai",
     "affiliate": "luma-genie",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-26",
     "inputs": "Text",
     "plans": [],
     "costPerModel": "n/a",
@@ -406,28 +415,28 @@
     },
     "printability": null,
     "modelVersion": null,
-    "notes": "Luma's official help says Genie remains supported in the separate Luma app (not Dream Machine). Luma's current pricing page (Plus $30/Pro $90/Ultra $300) covers Dream Machine image/video credits and does not mention Genie, so no Genie pricing is listed. Export formats reported by third parties (GLB/OBJ/USDZ/STL) are unconfirmed.",
+    "notes": "DISCONTINUED: Luma's App Store release notes for the Luma 3D Capture app say 'We've officially Sunset Genie since January 1, 2026 … You can still export your content.' lumalabs.ai/genie now redirects to the Luma homepage (checked 2026-10-26).",
     "sources": [
-      "https://lumalabs.ai/learning-hub/genie-capture",
-      "https://lumalabs.ai/pricing"
+      "https://apps.apple.com/us/app/luma-3d-capture/id1615849914",
+      "https://lumalabs.ai/learning-hub/genie-capture"
     ],
     "complete": false,
-    "status": "legacy",
+    "status": "discontinued",
     "affiliateUrl": null,
-    "freeCommercial": null
+    "freeCommercial": "Discontinued"
   },
   {
     "slug": "sloyd",
     "name": "Sloyd",
     "url": "https://www.sloyd.ai",
     "affiliate": "sloyd",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Text, image, multi-image, templates",
     "plans": [
       {
         "name": "Guest",
         "price": "$0",
-        "credits": "1 text-to-3D + 1 image-to-3D daily"
+        "credits": "1 text-to-3D + 1 image-to-3D daily (plan card says '1 AI 3D generation per day')"
       },
       {
         "name": "Plus",
@@ -436,7 +445,7 @@
       },
       {
         "name": "Pro",
-        "price": "$41.67/mo billed yearly ($500)",
+        "price": "$50/mo or $41.67/mo billed yearly ($500)",
         "credits": "Unlimited generations + 350 credits/month"
       }
     ],
@@ -469,7 +478,7 @@
     "name": "Alpha3D",
     "url": "https://www.alpha3d.io",
     "affiliate": "alpha3d",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Image, text, multi-view (up to 4 views; 8 on Creator Pro)",
     "plans": [
       {
@@ -484,7 +493,7 @@
       },
       {
         "name": "Creator",
-        "price": "€100/mo",
+        "price": "€50/mo",
         "credits": "3,200 3D credits (~107 models) + 10,000 Tokens"
       },
       {
@@ -498,7 +507,7 @@
         "credits": "Custom credits, dedicated GPU node"
       }
     ],
-    "costPerModel": "≈€1.67 (Tester), ≈€0.46 (Basic), ≈€0.93 (Creator), ≈€0.45 (Creator Pro) – derived from Alpha3D's own '~N models' figures; 42 credits per High-Res PBR job",
+    "costPerModel": "≈€1.67 (Tester), ≈€0.46 (Basic), ≈€0.47 (Creator), ≈€0.45 (Creator Pro) – derived from Alpha3D's own '~N models' figures; 42 credits per High-Res PBR job",
     "freeTier": "No free plan (sign-up Token bonus only)",
     "exportFormats": [
       "GLB",
@@ -514,7 +523,7 @@
     },
     "printability": "STL via conversion; Ultra High Res 500K–1.5M faces suggested for printing",
     "modelVersion": "Alpha-5",
-    "notes": "REST API and MCP server included on every plan (per pricing page). Blender add-on now live. Annual billing saves 20%; promo on the official page: 50% off the first 3 months with code WLCMBCK50. Note: the USD view of the pricing page showed Creator at $54/mo on 2026-10-19, which conflicts with the €100 EUR list price – check at checkout.",
+    "notes": "REST API and MCP server included on every plan (per pricing page). Blender add-on live. Annual billing saves 20%; promo on the official page: 50% off the first 3 months with code WLCMBCK50. Re-checked 2026-10-26: Creator is now €50/mo in the EUR view (we listed €100); the USD view shows $5 / $17 / $54 / $162, which resolves last week's USD/EUR conflict.",
     "sources": [
       "https://www.alpha3d.io/pricing",
       "https://www.alpha3d.io/faq"
@@ -528,7 +537,7 @@
     "name": "3DFY.ai",
     "url": "https://3dfy.ai",
     "affiliate": "3dfy",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Text",
     "plans": [
       {
@@ -569,7 +578,7 @@
     "name": "Kaedim",
     "url": "https://www.kaedim3d.com",
     "affiliate": "kaedim",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Image, sketch, brief",
     "plans": [
       {
@@ -626,7 +635,7 @@
     "name": "Spline AI",
     "url": "https://spline.design/ai",
     "affiliate": "spline-ai",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Text, image (AI 3D Generation)",
     "plans": [
       {
@@ -687,52 +696,63 @@
     "name": "VARCO 3D",
     "url": "https://3d.varco.ai",
     "affiliate": "varco-3d",
-    "dateChecked": "2026-10-16",
+    "dateChecked": "2026-10-26",
     "inputs": "Text, image, multi-view",
     "plans": [
       {
         "name": "Free",
         "price": "$0",
-        "credits": "2,000 credits (~10 assets)"
+        "credits": "1,000 points/month, 5 downloads/month"
       },
       {
         "name": "Plus",
-        "price": "₩22,000/mo (KRW, official launch PR); $20 per Capterra",
-        "credits": "10,000/month"
+        "price": "$20/mo (VAT incl.)",
+        "credits": "12,000 points/month (10,000 + 2,000 bonus)"
+      },
+      {
+        "name": "Pro",
+        "price": "$40/mo (VAT incl.)",
+        "credits": "30,000 points/month (20,000 + 10,000 bonus)"
       },
       {
         "name": "Premium",
-        "price": "₩165,000/mo (launch PR); $100 per Capterra",
-        "credits": "75,000/month (launch PR) vs 50,000 (Capterra) – conflicting"
+        "price": "$100/mo (VAT incl.)",
+        "credits": "80,000 points/month (50,000 + 30,000 bonus)"
       }
     ],
-    "costPerModel": "n/a",
-    "freeTier": "Yes – 2,000 credits, 1 concurrent generation",
-    "exportFormats": [],
-    "license": "Paid plans: commercial use included (per Capterra/GetApp listing); free: unknown",
-    "features": {
-      "texturing": "Yes – PBR",
-      "rigging": "Yes – AI rigging & animation",
-      "retopology": "Yes – quad remesh"
-    },
-    "printability": "Official site mentions a 3D printing experience",
-    "modelVersion": "varco-3d-2.0 (per Capterra listing)",
-    "notes": "Launched Dec 2025 by NC AI. Pricing sources conflict; check official site.",
-    "sources": [
-      "https://3d.varco.ai/",
-      "https://nc-ai.com/ko/newsroom/press/nc-ai-ai-3d-varco-3d",
-      "https://www.capterra.com/p/10049298/Varco-3D/pricing/"
+    "costPerModel": "n/a (points per task not published on the pricing page)",
+    "freeTier": "Yes – 1,000 points/month, 5 downloads/month, 500k-tri meshes, 4K textures, commercial use with attribution (CC BY 4.0)",
+    "exportFormats": [
+      "OBJ",
+      "FBX",
+      "GLB",
+      "STL"
     ],
-    "complete": false,
+    "license": "Free: commercial use with attribution (CC BY 4.0). Plus/Pro/Premium: unrestricted commercial use. Inputs and outputs never used for AI training (all plans).",
+    "features": {
+      "texturing": "Yes – PBR, 1K/2K/4K on paid plans (4K only on Free)",
+      "rigging": "Yes – AI rigging, ~20 animations (Free) or ~550 (paid)",
+      "retopology": "Yes – remesh; quad 1K–100K on paid plans, tri up to 1M"
+    },
+    "printability": "STL export on all plans; 3D printing listed as available on every plan",
+    "modelVersion": "varco-3d-2.0 (per Capterra listing)",
+    "notes": "New plan line-up from Oct 19, 2026 (official pricing page and notices): Free, Plus $20, Pro $40 (new), Premium $100; launch offer 50% off the first month (through Nov 30 per Seoul Economic Daily – third-party). Paid plans add more image models and aspect ratios, multiview input, unlimited downloads, DCC Bridge. Points expire monthly; prepaid Credits (shared with VARCO Sound and the NC AI API Platform, valid 5 years) can be used after points run out. Made by NC AI.",
+    "sources": [
+      "https://www.varco.ai/home/en/pricing",
+      "https://www.varco.ai/home/en/notice/10-19b",
+      "https://www.varco.ai/home/en/notice/10-19a",
+      "https://3d.varco.ai/"
+    ],
+    "complete": true,
     "affiliateUrl": null,
-    "freeCommercial": null
+    "freeCommercial": "Yes – with attribution (CC BY 4.0)"
   },
   {
     "slug": "yvo3d",
     "name": "YVO3D",
     "url": "https://www.yvo3d.com",
     "affiliate": "yvo3d",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Image, text",
     "plans": [
       {
@@ -793,7 +813,7 @@
     "name": "Masterpiece X",
     "url": "https://www.masterpiecex.com",
     "affiliate": "masterpiece-x",
-    "dateChecked": "2026-10-19",
+    "dateChecked": "2026-10-26",
     "inputs": "Text",
     "plans": [
       {
